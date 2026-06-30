@@ -95,7 +95,7 @@ with DAG(
 
     transform_task = PythonOperator(
         task_id="transform",
-        python_callable=transform,
+        python_callable=transformsd,
     )
 
     load_task = PythonOperator(
