@@ -13,4 +13,4 @@ jobs:
       - name: install reiquirments
         run: pip install -r requirements.txt
       - name: run test data quality 
-        run: pytest pytest tests/test_data_quality.py
+        run: pytest tests/test_data_quality.py
