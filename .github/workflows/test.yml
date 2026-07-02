@@ -12,5 +12,9 @@ jobs:
           python-version: '3.11'    
       - name: install reiquirments
         run: pip install -r requirements.txt
+      - name: Install dbt
+        run: pip install dbt-core dbt-sqlserver
+      - name: Check SQL linting
+        run: pip install sqlfluff && sqlfluff lint models/
       - name: run test data quality 
         run: pytest tests/test_data_quality.py
