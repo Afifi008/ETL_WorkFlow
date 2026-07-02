@@ -15,4 +15,4 @@ jobs:
       - name: Install dbt
         run: pip install dbt-core dbt-sqlserver
       - name: run test data quality 
-        run: pytest tests/test_data_quality.py
+        run: pytest tests/test_transformations.py
